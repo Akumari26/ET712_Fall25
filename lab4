@@ -1,0 +1,64 @@
+/*
+Fnu Alisha Kumari
+lab 4, function
+Sep 9, 2025
+*/
+console.log("Fnu Alisha Kumari")
+//define a function to print a message
+function msg(){
+    console.log("----- Example 1 -----")
+    console.log("Hello World!")
+}
+
+//define a function to print from 3 to 1
+function printCount(){
+    console.log("----- Example 2 -----")
+    for(let n = 3; n>0 ; n++){
+        console.log(n)
+    }
+}
+
+//define a function that passed a username
+function greeting(username){
+    console.log("----- Example 3 -----")
+    console.log(`Welcome to JS ${username}`)
+}
+
+//define a function passes a message and print it uppercase
+function upperMessage(message){
+    console.log("----- Example 4 -----")
+    let changeUpper = message.toUpeperCase()
+    console.log(changeUpper)
+}
+
+//define a function to simulate a snake eye game.
+// pass two numbers to the function, and check if both number are '1'
+function isSnakeEyes(dice1, dice2){
+    console.log("----- Example 5 -----")
+    if(dice1===1 && dice2===1){
+        console.log("Snake Eyes!")
+     }
+     else{
+        console.log("Not Snake Eyes!")
+     }
+}
+
+//define a function taht returns the area of a rectangle
+function areaRectangle(lenght, width){
+    console.log("----- Example 6 -----")
+    return lenght*width
+}
+
+//define a function to check a temperature. if the remperature is greater than 75, returns 'true', otherwise it returns a 'false'
+function checkTemperature(temperature){
+    console.log("----- Example 7 -----")
+    if(temperature>=75){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+//define a function called checkname() that handles situations 
+console.log("----- Exercise 1 -----")
