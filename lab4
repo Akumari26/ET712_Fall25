@@ -62,3 +62,15 @@ function checkTemperature(temperature){
 
 //define a function called checkname() that handles situations 
 console.log("----- Exercise 1 -----")
+let name = prompt("Enter your name:")
+
+while(name === null || name === "" || !isNaN(name)){
+    if(name === null || name === ""){
+        name = prompt("You forgot to enter a name. Enter a name again:")
+    }
+     else{
+         name = prompt(name + " is invalid! Enter a name again:")
+     }
+
+ console.log("Welcome " + name.toUpperCase() + " to the class!")
+}
