@@ -83,3 +83,38 @@ try{
         console.log('Please pass a string next time!')
    }
 }
+
+LAB EXERCISE 1
+const mycalculator = {
+    // properties
+    message: "Working with my calculator",
+    side: 2,
+
+    // methods
+    area_square : function(){
+        return Math.pow(this.side, 2)
+    },
+    volume_cube : function(){
+        return Math.pow(this.side, 3)
+    }
+}
+
+console.log("\n------ Lab Exercise 1 ------")
+console.log(mycalculator.message)
+console.log(`Area of square = ${mycalculator.area_square()}`)
+console.log(`Volume of cube = ${mycalculator.volume_cube()}`)
+
+// LAB EXERCISE 2
+function readProperty(obj, prop){
+    try{
+        return obj[prop]
+    }
+    catch(error){
+        return "Error accessing property"
+    }
+}
+
+console.log("\n------ Lab Exercise 2 ------")
+let student = {name:"Alisha", age:21}
+console.log(readProperty(student, "name"))   // works
+console.log(readProperty(null, "name"))
